@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-class PlansController < ApplicationController
+class PlansController < ProtectedController
   before_action :set_plan, only: %i[show update destroy]
 
   # GET /plans
   def index
-    @plans = current_user.plans.all
+    @plans = current_user.plans
 
     render json: @plans
   end
