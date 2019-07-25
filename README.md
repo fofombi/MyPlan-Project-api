@@ -9,7 +9,7 @@ The user can view, delete and update his entries. For eaxample, Anyone who would
 - Four days of hard work
 -Design and implement the API
 -Design and implement the client
--Deploy apps
+- Commit regularly & Deploy my work
 -API
 -API repo
 
@@ -67,19 +67,18 @@ As a user, I want to select My Plans that I have covered.
 
 # Tables & Columns
     * users
-
 -alias
-
 -email
-
 -password
-
 
   * MyPlan entries
 -Descriptions
 -starting_date
 -ending_date
 -comment
--Rate
+-rating
 
 Some Observations
+1-In this  project, I have a better understanding about how to work with API and testing the paths. I started working with the back-end before spending much times with the front-end connecting to the API, particulary sending the right data throught the Ajaxrequest. ..
+2- The issue queue help me a lot in this project. I feel more confident in this project, but there are few things I wish I can do to improve.
+3- I wish I could add more features to MyPlan like select, view each plan,  the date the plan was made and maybe be set an alert to remind about the due date.
