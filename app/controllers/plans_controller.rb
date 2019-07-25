@@ -5,7 +5,7 @@ class PlansController < ProtectedController
 
   # GET /plans
   def index
-    @plans = current_user.plans
+    @plans = current_user.plans.all
 
     render json: @plans
   end
@@ -17,7 +17,7 @@ class PlansController < ProtectedController
 
   # POST /plans
   def create
-    @plan = current_user.build(plan_params)
+    @plan = current_user.plans.new(plan_params)
 
     if @plan.save
       render json: @plan, status: :created, location: @plan
@@ -38,13 +38,14 @@ class PlansController < ProtectedController
   # DELETE /plans/1
   def destroy
     @plan.destroy
+    head :no_content
   end
 
   private
 
   # Use callbacks to share common setup or constraints between actions.
   def set_plan
-    @plan = current_user.find(params[:id])
+    @plan = current_user.plans.find(params[:id])
   end
 
   # Only allow a trusted parameter "white list" through.
