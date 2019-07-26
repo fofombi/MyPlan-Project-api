@@ -27,6 +27,7 @@ The user can view, delete and update his entries. For eaxample, Anyone who would
 * gitHub
 
 # Wireframes Link
+https://imgur.com/INU48pv final
 
 https://i.imgur.com/22s8O5l.jpg
 
@@ -63,7 +64,7 @@ I want to add the date ending date
 
 " I want to delete a studying entry
 
-As a user, I want to select My Plans that I have covered.
+As a user, I want to see My Plans that I have covered.
 
 # Tables & Columns
     * users
